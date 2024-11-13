@@ -5,6 +5,8 @@ import { ArrowRightMini, XMark } from "@medusajs/icons"
 import { Text, clx, useToggleState } from "@medusajs/ui"
 import { Fragment } from "react"
 
+import { FiMenu } from "react-icons/fi"
+
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import CountrySelect from "../country-select"
 import { HttpTypes } from "@medusajs/types"
@@ -29,9 +31,9 @@ const SideMenu = ({ regions }: { regions: HttpTypes.StoreRegion[] | null }) => {
               <div className="relative flex h-full">
                 <Popover.Button
                   data-testid="nav-menu-button"
-                  className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base"
+                  className="text-base text-black relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base"
                 >
-                  Menu
+                  <FiMenu size={24} />
                 </Popover.Button>
               </div>
 
